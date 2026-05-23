@@ -1,0 +1,19 @@
+{
+  "id": "JOELHUB",
+  "name": "Joel's Fandom",
+  "short_name": "Joel's Fandom",
+  "scope": "./",
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#FFFFFF",
+  "background_color": "#043D85",
+  "icons": [
+    {
+      "src": "profile.jpg",
+      "sizes": "any",
+      "type": "image/jpg"
+    }
+  ],
+  "app_name": "Joel's Fandom",
+  "description": "Meu Fandom do Messi, meu ídolo, meu herói, meu homem favorito! 🤍"
+}
