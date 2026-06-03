@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Carros de Luxo</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body{
+      background: #0b0f19;
+      overflow-x: hidden;
+    }
+
+    /* MENU */
+
+    .navbar{
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(10px);
+    }
+
+    .navbar-brand{
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+
+    /* HERO */
+
+    .hero{
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 20px;
+
+      background:
+      linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+      url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1600&auto=format&fit=crop');
+
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero h1{
+      font-size: 70px;
+      font-weight: 700;
+      color: white;
+      text-shadow: 0 0 20px #000;
+    }
+
+    .hero p{
+      color: #d1d5db;
+      font-size: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .hero .btn{
+      padding: 14px 35px;
+      border-radius: 40px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .hero .btn:hover{
+      transform: scale(1.05);
+    }
+
+    /* TITULO */
+
+    .titulo{
+      text-align: center;
+      color: white;
+      margin-bottom: 50px;
+    }
+
+    .titulo h2{
+      font-size: 45px;
+      font-weight: bold;
+    }
+
+    .titulo p{
+      color: #9ca3af;
+    }
+
+    /* CARDS */
+
+    .card{
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: 0.4s;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+
+    .card:hover{
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px rgba(0,0,0,0.8);
+    }
+
+    .card img{
+      height: 240px;
+      object-fit: cover;
+      transition: 0.4s;
+    }
+
+    .card:hover img{
+      transform: scale(1.05);
+    }
+
+    .card-body{
+      padding: 25px;
+    }
+
+    .card h5{
+      color: white;
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    .card-text{
+      color: #cbd5e1;
+      margin-top: 15px;
+      min-height: 90px;
+    }
+
+    .btn-custom{
+      width: 100%;
+      border-radius: 12px;
+      padding: 12px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover{
+      transform: scale(1.03);
+    }
+
+    /* FOOTER */
+
+    footer{
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 35px;
+      margin-top: 70px;
+      border-top: 1px solid #222;
+    }
+
+    footer h4{
+      font-weight: bold;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- MENU -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+
+    <div class="container">
+
+      <a class="navbar-brand fw-bold" href="#">
+        🚗 Super Cars
+      </a>
+
+    </div>
+
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="container">
+
+      <h1>Super Carros de Luxo</h1>
+
+      <p class="mt-4">
+        Conheça alguns dos carros mais rápidos, luxuosos e incríveis do mundo.
+      </p>
+
+      <a href="#carros" class="btn btn-primary btn-lg mt-4">
+        Ver Coleção
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- CARDS -->
+  <section id="carros" class="container py-5">
+
+    <div class="titulo">
+
+      <h2>🔥 Coleção Exclusiva</h2>
+
+      <p>
+        Explore os super carros mais desejados do planeta.
+      </p>
+
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Nissan -->
+      <div class="col-md-4">
+        <div class="card h-100">
+
+          <img src="https://libertywalk.co.jp/wp-content/uploads/2022/10/LB-WORKS-NISSAN-GT-R-R35-type-2.jpg" class="card-img-top">
+
+          <div class="card-body">
+
+            <h5>Nissan GT-R R35</h5>
+
+            <p class="card-text">
+              Superesportivo japonês famoso por velocidade extrema e desempenho impressionante.
+            </p>
+
+            <a href="https://www.nissan-global.com/EN/" target="_blank" class="btn btn-outline-light btn-custom">
+              Ver Detalhes
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Ferrari -->
+      <div class="col-md-4">
+        <div class="card h-100">
+
+          <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?q=80&w=1200&auto=format&fit=crop" class="card-img-top">
+
+          <div class="card-body">
+
+            <h5>Ferrari SF90</h5>
+
+            <p class="card-text">
+              Hipercarro híbrido com potência absurda e tecnologia avançada da Ferrari.
+            </p>
+
+            <a href="https://www.ferrari.com/" target="_blank" class="btn btn-outline-danger btn-custom">
+              Ver Detalhes
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Lamborghini -->
+      <div class="col-md-4">
+        <div class="card h-100">
+
+          <img src="https://images.unsplash.com/photo-1621135802920-133df287f89c?q=80&w=1200&auto=format&fit=crop" class="card-img-top">
+
+          <div class="card-body">
+
+            <h5>Lamborghini Aventador</h5>
+
+            <p class="card-text">
+              Design agressivo com motor V12 e desempenho extremamente poderoso.
+            </p>
+
+            <a href="https://www.lamborghini.com/" target="_blank" class="btn btn-outline-warning btn-custom">
+              Ver Detalhes
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Bugatti -->
+      <div class="col-md-4">
+        <div class="card h-100">
+
+          <img src="https://quatrorodas.abril.com.br/wp-content/uploads/2018/03/bugatti_chiron_sport_8.jpg?quality=70&strip=info&w=720&crop=1">
+
+          <div class="card-body">
+
+            <h5>Bugatti Chiron</h5>
+
+            <p class="card-text">
+              Um dos carros mais rápidos do mundo com luxo e potência extrema.
+            </p>
+
+            <a href="https://www.bugatti.com/" target="_blank" class="btn btn-outline-primary btn-custom">
+              Ver Detalhes
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Porsche -->
+      <div class="col-md-4">
+        <div class="card h-100">
+
+          <img src="data:image/jpeg;base64,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">
+
+          <div class="card-body">
+
+            <h5>Porsche GT3 RS</h5>
+
+            <p class="card-text">
+              Esportivo perfeito para pistas com estabilidade e aceleração incríveis.
+            </p>
+
+            <a href="https://www.porsche.com/" target="_blank" class="btn btn-outline-light btn-custom">
+              Ver Detalhes
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Mustang -->
+      <div class="col-md-4">
+        <div class="card h-100">
+
+          <img src="https://www.automaistv.com.br/wp-content/uploads/2019/06/ford_mustang_shelby_gt500_90.jpg">
+
+          <div class="card-body">
+
+            <h5>Mustang Shelby GT500</h5>
+
+            <p class="card-text">
+              Muscle car americano extremamente potente com visual agressivo.
+            </p>
+
+            <a href="https://www.ford.com/" target="_blank" class="btn btn-outline-info btn-custom">
+              Ver Detalhes
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- BMW -->
+      <div class="col-md-4">
+        <div class="card h-100">
+
+          <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=1200&auto=format&fit=crop" class="card-img-top">
+
+          <div class="card-body">
+
+            <h5>BMW M8 Competition</h5>
+
+            <p class="card-text">
+              Luxo premium com desempenho esportivo e motor V8 poderoso.
+            </p>
+
+            <a href="https://www.bmw.com/" target="_blank" class="btn btn-outline-success btn-custom">
+              Ver Detalhes
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Audi -->
+      <div class="col-md-4">
+        <div class="card h-100">
+
+          <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?q=80&w=1200&auto=format&fit=crop" class="card-img-top">
+
+          <div class="card-body">
+
+            <h5>Audi R8 V10 Plus</h5>
+
+            <p class="card-text">
+              Elegância, potência e tecnologia em um dos melhores esportivos da Audi.
+            </p>
+
+            <a href="https://www.audi.com/" target="_blank" class="btn btn-outline-secondary btn-custom">
+              Ver Detalhes
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Jesko -->
+      <div class="col-md-4">
+        <div class="card h-100">
+
+          <img src="https://images.unsplash.com/photo-1566024164372-0281f1133aa6?q=80&w=1200&auto=format&fit=crop" class="card-img-top">
+
+          <div class="card-body">
+
+            <h5>Koenigsegg Jesko</h5>
+
+            <p class="card-text">
+              Hipercarro sueco criado para quebrar recordes de velocidade.
+            </p>
+
+            <a href="https://www.koenigsegg.com/" target="_blank" class="btn btn-outline-danger btn-custom">
+              Ver Detalhes
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <h4>🚘 Álbum de Super Carros</h4>
+
+    <p class="mt-3">
+     
+    </p>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

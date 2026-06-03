@@ -1,0 +1,12 @@
+{
+  "color": "#000",
+  "background_color": "#043D85",
+  "icons": [
+    {
+      "src": "profile.jpg",
+      "sizes": "any",
+      "type": "image/jpg"
+    }
+  ],
+  "name": "Joel Flávio"
+}
